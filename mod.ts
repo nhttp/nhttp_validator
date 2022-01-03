@@ -16,7 +16,7 @@ type Class = { new (): any };
 function joinTargetMethod(target: any, prop: string, arr: any[]) {
   let obj = target["methods"] || {};
   obj[prop] = obj[prop] || {};
-  obj[prop].handlers = arr.concat(obj[prop].handlers || []);
+  obj[prop].fns = arr.concat(obj[prop].fns || []);
   return obj;
 }
 
@@ -29,7 +29,7 @@ export function validate(_class: Class, opts: ValidatorOptions = {}): Handler {
     } catch (error) {
       throw new HttpError(
         422,
-        "Unprocessable Entity Error",
+        error,
         "UnprocessableEntityError",
       );
     }

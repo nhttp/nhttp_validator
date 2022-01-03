@@ -4,7 +4,7 @@
   "entry": "./mod.ts",
   "description": "Body validator for Deno nhttp",
   "homepage": "https://github.com/nhttp/nhttp_validator",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "files": [
     "./class-validator.ts",
     "./mod.ts",

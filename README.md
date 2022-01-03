@@ -12,13 +12,13 @@ Body validator for [Deno](https://deno.land/)
 ### deno.land
 
 ```ts
-import { validate } from "https://deno.land/x/nhttp_validator@0.2.0/mod.ts";
+import { validate } from "https://deno.land/x/nhttp_validator@0.3.0/mod.ts";
 ```
 
 ### nest.land
 
 ```ts
-import { validate } from "https://x.nest.land/nhttp_validator@0.2.0/mod.ts";
+import { validate } from "https://x.nest.land/nhttp_validator@0.3.0/mod.ts";
 ```
 
 ## Usage
@@ -30,7 +30,7 @@ import {
   IsPhoneNumber,
   IsString,
   validate,
-} from "https://deno.land/x/nhttp_validator@0.2.0/mod.ts";
+} from "https://deno.land/x/nhttp_validator@0.3.0/mod.ts";
 
 // class-validator person
 class Person {
@@ -94,7 +94,7 @@ If not valid throw error with status 422 (Unprocessable Entity).
 ## Run
 
 ```bash
-deno run --allow-net --allow-read --unstable yourfile.ts
+deno run --allow-net yourfile.ts
 ```
 
 ## Featuring NHttp Controller
@@ -110,7 +110,7 @@ import {
   IsEmail, 
   IsPhoneNumber, 
   Validate 
-} from "https://deno.land/x/nhttp_validator@0.2.0/mod.ts";
+} from "https://deno.land/x/nhttp_validator@0.3.0/mod.ts";
 
 import { 
   addControllers, 
